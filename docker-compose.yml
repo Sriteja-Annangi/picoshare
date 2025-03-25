@@ -3,10 +3,10 @@ services:
   picoshare:
     image: mtlynch/picoshare
     environment:
-      - PORT=4001
+      - PORT=4002
       - PS_SHARED_SECRET=Demigod  # Change this password to a secure one
     ports:
-      - "4001:4001"
+      - "4002:4002"
     volumes:
       - ./data:/data
     command: -db /data/store.db
